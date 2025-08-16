@@ -47,9 +47,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth scrolling wrapper */
-#smooth-wrapper { position: fixed; inset: 0; overflow: hidden; will-change: transform; }
-#smooth-content { position: absolute; inset: 0 auto auto 0; width: 100%; contain: layout style paint; will-change: transform; }
+/* Smooth scrolling wrapper (progressive enhancement) */
+#smooth-wrapper { position: static; overflow: visible; }
+#smooth-content { position: static; }
+.has-inertia #smooth-wrapper { position: fixed; inset: 0; overflow: hidden; will-change: transform; }
+.has-inertia #smooth-content { position: absolute; inset: 0 auto auto 0; width: 100%; contain: layout style paint; will-change: transform; }
 
 @media (prefers-reduced-motion: reduce) {
   #smooth-wrapper { position: static; overflow: visible; }

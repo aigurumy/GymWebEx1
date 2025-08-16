@@ -101,6 +101,8 @@ function setCurrentYear() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  // Mark that JS is running to enable enhanced features only then
+  document.documentElement.classList.add('has-js');
   applyDesignSystem();
   setupScrollHeader();
   setupNavToggle();
@@ -227,6 +229,8 @@ function setupInertiaScroll() {
     requestAnimationFrame(raf);
   }
 
+  // Enable enhanced layout now that JS is ready
+  document.documentElement.classList.add('has-inertia');
   updateBodyHeight();
   window.addEventListener('resize', updateBodyHeight);
   window.addEventListener('scroll', onScroll, { passive: true });
