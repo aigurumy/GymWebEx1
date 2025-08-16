@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Modern fitness and gym website with responsive layout and micro animations." />
+    <title>GYM • High-Intensity Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Serif+Text:ital@0;1&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner" aria-label="Primary">
+      <div class="container header-inner">
+        <a class="logo" href="#hero" aria-label="Gym home">GYM</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" role="navigation">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#transformations">Transformations</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#rooms">Gym Rooms</a></li>
+            <li><a href="#app">App</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+    <main id="main" tabindex="-1">
+      <!-- Hero: split screen with overlay text; images set directly for reliability -->
+      <section id="hero" class="hero" aria-label="Hero">
+        <div class="hero-grid">
+          <div class="hero-half hero-left" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop" alt="Athlete lifting in gym" loading="eager" />
+          </div>
+          <div class="hero-half hero-right" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1600&auto=format&fit=crop" alt="Group workout session" loading="eager" />
+          </div>
+          <div class="hero-overlay">
+            <h1 class="gradient-text">Train Hard.<br><span class="title-alt">Feel Strong.</span></h1>
+          </div>
+        </div>
+        <a class="floating-whatsapp" href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+          <!-- Simple WhatsApp glyph -->
+          <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.77 11.77 0 0 0 12.06 0A11.93 11.93 0 0 0 .13 11.77a11.65 11.65 0 0 0 1.62 6L0 24l6.41-1.68a12.07 12.07 0 0 0 5.65 1.44h.05A11.88 11.88 0 0 0 24 11.77a11.62 11.62 0 0 0-3.48-8.29M12.11 21.9a9.9 9.9 0 0 1-5.05-1.39l-.36-.21l-3.8 1l1-3.7l-.24-.38a9.85 9.85 0 0 1-1.52-5.26A9.95 9.95 0 0 1 12.06 2a9.61 9.61 0 0 1 6.91 2.86a9.47 9.47 0 0 1 2.89 6.88a10 10 0 0 1-9.75 10.16m5.39-7.42c-.3-.15-1.77-.86-2.05-.95s-.48-.15-.69.15s-.79.95-1 .91s-.53-.08-.81-.31a7.6 7.6 0 0 1-2.23-1.77a8 8 0 0 1-1.49-2.31c-.16-.3 0-.46.15-.61s.3-.38.45-.58s.21-.31.3-.53s0-.41 0-.58s-.61-1.56-.83-2.12s-.46-.49-.69-.5h-.58a1.1 1.1 0 0 0-.79.37a3.32 3.32 0 0 0-1 2.46a5.79 5.79 0 0 0 1.2 2.46a13.22 13.22 0 0 0 5.05 4.79c.61.26 1.09.42 1.47.53a3.56 3.56 0 0 0 1.62.1a2.65 2.65 0 0 0 1.76-1.28a2.21 2.21 0 0 0 .15-1.28c-.01-.06-.27-.16-.57-.31"/></svg>
+        </a>
+      </section>
+
+      <!-- Services: two column -->
+      <section id="services" class="section section-services" aria-labelledby="services-title">
+        <div class="container grid-2 reveal">
+          <div>
+            <h2 id="services-title">Services</h2>
+            <p>Personal training, group classes, and tailored programs to match your goals.</p>
+          </div>
+          <div class="service-options">
+            <button class="btn btn-block btn-outline glow">Personal Training</button>
+            <button class="btn btn-block btn-outline glow">HIIT Classes</button>
+            <button class="btn btn-block btn-outline glow">Strength Programs</button>
+            <button class="btn btn-block btn-outline glow">Nutrition Coaching</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features: three icon cards -->
+      <section id="features" class="section section-features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title" class="center">Why Train With Us</h2>
+          <div class="card-grid reveal">
+            <article class="card">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 10h2v10H3zm16 0h2v10h-2zM7 4h10v16H7z"/></svg>
+              </div>
+              <h3>Pro Equipment</h3>
+              <p>Top-tier machines and weights to push your limits safely.</p>
+            </article>
+            <article class="card">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l4 7l7 1l-5 5l1 7l-7-4l-7 4l1-7L1 10l7-1z"/></svg>
+              </div>
+              <h3>Elite Coaches</h3>
+              <p>Certified trainers guiding every rep and routine.</p>
+            </article>
+            <article class="card">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14l4-4h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"/></svg>
+              </div>
+              <h3>Motivating Community</h3>
+              <p>Train with energetic people who keep you accountable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Branding strip -->
+      <section id="brands" class="branding-strip" aria-label="Branding strip">
+        <div class="strip-inner" aria-hidden="true">
+          <span>GYM</span><span>•</span><span>TRAIN</span><span>•</span><span>PERFORM</span><span>•</span>
+          <span>GYM</span><span>•</span><span>TRAIN</span><span>•</span><span>PERFORM</span><span>•</span>
+          <span>GYM</span><span>•</span><span>TRAIN</span><span>•</span><span>PERFORM</span><span>•</span>
+        </div>
+      </section>
+
+      <!-- Transformations: carousel before/after -->
+      <section id="transformations" class="section section-carousel" aria-labelledby="transformations-title">
+        <div class="container">
+          <h2 id="transformations-title" class="center">Transformations</h2>
+          <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Before and after gallery">
+            <button class="carousel-control prev" aria-label="Previous slide">&#10094;</button>
+            <div class="carousel-track">
+              <div class="slide" aria-label="Slide 1">
+                <figure class="pair">
+                  <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1200&auto=format&fit=crop" alt="Before training" data-fallback="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" />
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure class="pair">
+                  <img src="https://images.unsplash.com/photo-1517341720771-638c1c1d10c0?q=80&w=1200&auto=format&fit=crop" alt="After training" data-fallback="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" />
+                  <figcaption>After</figcaption>
+                </figure>
+              </div>
+              <div class="slide" aria-label="Slide 2">
+                <figure class="pair">
+                  <img src="https://images.unsplash.com/photo-1518458601860-6b57f4959497?q=80&w=1200&auto=format&fit=crop" alt="Before training" data-fallback="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" />
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure class="pair">
+                  <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" alt="After training" data-fallback="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" />
+                  <figcaption>After</figcaption>
+                </figure>
+              </div>
+            </div>
+            <button class="carousel-control next" aria-label="Next slide">&#10095;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trainers: left copy, right 2-card showcase -->
+      <section id="trainers" class="section section-trainers" aria-labelledby="trainers-title">
+        <div class="container trainer-showcase reveal">
+          <div class="trainer-copy">
+            <h2 id="trainers-title">Personal Trainers</h2>
+            <p>Get ready to achieve your fitness goals with our dedicated team of expert trainers by your side. From personalized guidance to unwavering support, our trainers are here to empower you every step of the way on your journey to a healthier, stronger you.</p>
+          </div>
+          <div class="trainer-right">
+            <article class="trainer-card">
+              <img src="assets/images/trainers/Trainer_1.jpg" data-src-base="Trainer_1" data-try-extensions="jpg,jpeg,png,webp" alt="Master Trainer Damon Lee" />
+              <div class="trainer-meta">
+                <span class="role">Master Trainer</span>
+                <h3 class="name">Damon Lee</h3>
+              </div>
+            </article>
+            <article class="trainer-card">
+              <img src="assets/images/trainers/Trainer_2.jpg" data-src-base="Trainer_2" data-try-extensions="jpg,jpeg,png,webp" alt="Master Trainer Jerry Yong" />
+              <div class="trainer-meta">
+                <span class="role">Master Trainer</span>
+                <h3 class="name">Jerry Yong</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gym rooms: full width images with captions -->
+      <section id="rooms" class="section section-rooms" aria-labelledby="rooms-title">
+        <div class="container">
+          <h2 id="rooms-title" class="center">Our Spaces</h2>
+        </div>
+        <div class="rooms-grid">
+          <figure class="room">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1600&auto=format&fit=crop" alt="Weight room" />
+            <figcaption>Weights</figcaption>
+          </figure>
+          <figure class="room">
+            <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3bd7?q=80&w=1600&auto=format&fit=crop" alt="Cardio area" />
+            <figcaption>Cardio</figcaption>
+          </figure>
+          <figure class="room">
+            <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=1600&auto=format&fit=crop" alt="Studio" />
+            <figcaption>Studio</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- App promo: dark background -->
+      <section id="app" class="section section-app" aria-labelledby="app-title">
+        <div class="container grid-2 reveal">
+          <div>
+            <h2 id="app-title">Get the App</h2>
+            <p>Track progress, book classes, and stay connected.</p>
+            <div class="store-buttons">
+              <a class="btn btn-solid glow" href="#" aria-label="Download on the App Store">App Store</a>
+              <a class="btn btn-solid glow" href="#" aria-label="Get it on Google Play">Google Play</a>
+            </div>
+          </div>
+          <div class="mockup-wrap">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c89?q=80&w=1200&auto=format&fit=crop" alt="App mockup" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Programs</h3>
+          <ul>
+            <li><a href="#services">Personal Training</a></li>
+            <li><a href="#services">HIIT</a></li>
+            <li><a href="#services">Strength</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="social-row" aria-label="Social links">
+            <a href="#" aria-label="Instagram" class="social">IG</a>
+            <a href="#" aria-label="TikTok" class="social">TT</a>
+            <a href="#" aria-label="YouTube" class="social">YT</a>
+          </div>
+        </div>
+      </div>
+      <div class="legal">© <span id="year"></span> GYM. All rights reserved.</div>
+    </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
+

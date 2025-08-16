@@ -1,0 +1,133 @@
+{
+  "design_system": {
+    "style": {
+      "color_palette": {
+        "primary": "#00BFFF",
+        "secondary": "#FF00FF",
+        "accent": "#FF4500",
+        "background_primary": "#000000",
+        "background_secondary": "#0A0A0A",
+        "text_primary": "#FFFFFF",
+        "text_secondary": "#B0B0B0",
+        "button_background": "#000000",
+        "button_border": "#00BFFF"
+      },
+      "typography": {
+        "primary_font": "Sans-serif, bold, geometric style",
+        "heading_weight": "bold",
+        "body_weight": "regular",
+        "font_case": "uppercase for headings, sentence case for body text",
+        "font_sizing": {
+          "hero_heading": "3rem",
+          "section_heading": "2rem",
+          "body_text": "1rem",
+          "button_text": "1rem"
+        }
+      },
+      "button_style": {
+        "shape": "rectangle",
+        "border_radius": "4px",
+        "border_style": "solid",
+        "border_width": "2px",
+        "hover_effect": "slight color inversion or glow",
+        "padding": "12px 24px"
+      },
+      "image_style": {
+        "border_radius": "none",
+        "aspect_ratio": "varies by section",
+        "image_treatment": "full-color, high-contrast, gym-action focused"
+      },
+      "iconography": {
+        "style": "solid, minimal, white or neon-colored icons",
+        "size": "medium"
+      }
+    },
+    "layout": {
+      "header": {
+        "type": "fixed",
+        "background": "transparent over hero, dark when scrolling",
+        "elements": [
+          "logo_left",
+          "navigation_right",
+          "download_button_top_right"
+        ]
+      },
+      "hero_section": {
+        "layout": "split_screen",
+        "left_side": "large lifestyle image",
+        "right_side": "group workout image",
+        "overlay_text": {
+          "alignment": "center",
+          "color": "gradient from #00BFFF to #FF00FF",
+          "font_size": "large",
+          "weight": "bold"
+        },
+        "cta": "WhatsApp floating button at bottom right"
+      },
+      "services_section": {
+        "background": "dark",
+        "layout": "two_column",
+        "left_column": "service description text",
+        "right_column": "stacked button-style service options"
+      },
+      "feature_icons_section": {
+        "layout": "three_columns",
+        "background": "dark",
+        "icon_cards": "image + heading + description"
+      },
+      "branding_strip": {
+        "repeating_logo_pattern": true,
+        "logo_spacing": "even, horizontal scroll or repeat"
+      },
+      "transformation_gallery": {
+        "layout": "carousel",
+        "image_pairing": "before_after",
+        "navigation": "arrow_buttons"
+      },
+      "trainer_profiles": {
+        "layout": "two_column_cards",
+        "card_style": "image_top, text_bottom, bordered highlight"
+      },
+      "gym_room_section": {
+        "layout": "full_width_images",
+        "image_count": "multiple",
+        "caption_style": "small white text overlay"
+      },
+      "app_promo_section": {
+        "background": "dark",
+        "elements": ["mockup_image", "app_store_buttons"]
+      },
+      "footer": {
+        "background": "#0A0A0A",
+        "layout": "multi_column_links",
+        "social_icons": "horizontal_row",
+        "legal_text": "small, centered"
+      }
+    },
+    "interactions": {
+      "hover_states": {
+        "buttons": "border and text glow",
+        "images": "slight zoom"
+      },
+      "scroll_behavior": {
+        "header": "becomes solid background after scroll",
+        "animations": "fade-in sections"
+      },
+      "carousel": {
+        "controls": "arrows",
+        "autoplay": false
+      }
+    },
+    "branding": {
+      "logo_style": "blocky, bold sans-serif with cut edges",
+      "logo_colors": ["white", "neon blue", "neon pink"],
+      "brand_vibe": "modern, energetic, high-intensity gym aesthetic"
+    }
+  }
+}
+
+
+
+
+
+
